@@ -1,0 +1,40 @@
+Escribe un programa que lea 10 números enteros:
+1. Añade una función que los ordene de mayor a menor
+2. Añade una función que te devuelva los tres mayores
+3. Añade una función que te devuelva los tres mayores que sean pares
+4. Añade una función que te devuelva la media de los tres mayores
+PISTA: programa adjunto
+#include<iostream>
+#include<stdio.h>
+#include<stdlib.h>
+
+using namespace std;
+int main() {
+    int numeros[10];
+    int cont;
+    cout << "Ingresa 10 numeros enteros:" << endl;
+    for (cont = 0; cont < 10; cont++) {
+        cin >> numeros[cont];
+    }
+    ordenar(numeros);
+    cout << "Numeros ordenados de mayor a menor: ";
+    for (int num : numeros) {
+        cout << num << " ";
+    }
+    cout << endl;
+    int tres_mayores;
+    cout << "Tres mayores: ";
+    for (int num : tres_mayores) {
+        cout << num << " ";
+    }
+    cout << endl;
+    int tres_mayores_pares
+    cout << "Tres mayores pares: ";
+    for (int num : tres_mayores_pares) {
+        cout << num << " ";
+    }
+    cout << endl;
+    double media_tres_mayores = obtener_media_tres_mayores(numeros);
+    cout << "Media de los tres mayores: " << media_tres_mayores << endl;
+    return 0;
+}
